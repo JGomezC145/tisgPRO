@@ -8,7 +8,18 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+
+*::selection {
+    background: green;
+    color: #fff;
+}
+
+span.textred::selection {
+	background: rgb(120, 212, 128);
+	color: rgb(224, 43, 43)
+}
 
 footer, header, section {
 	display: block;}
@@ -88,6 +99,9 @@ body {
 		font-size: 1.5em;
 	}
 
+	.textred {
+		color: rgb(211, 51, 51)
+	}
 /* Container */
 
 	.container {
@@ -150,17 +164,6 @@ body {
 
 	
 
-/* List */
-
-	
-	ul.default {
-		list-style: disc;
-		padding-left: 1em;
-	}
-
-		ul.default li {
-			padding-left: 0.5em;
-		}
 
 /* Button */
 
@@ -174,6 +177,7 @@ body {
 		background: #544d55;
 		border-radius: 4px;
 		border: 0;
+		margin-top: 30px;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -445,7 +449,7 @@ body {
 
 		/* Basic */
 
-			body, select, textarea {
+			body{
 				font-size: 14pt;
 			}
 
@@ -456,8 +460,6 @@ body {
 			h3 {
 				font-size: 1.25em;
 			}
-
-		/* Section/Article */
 
 			header.major p {
 				font-size: 1.25em;
@@ -700,6 +702,7 @@ body {
 
 			.button {
 				display: block;
+				margin-top: 30px;
 				width: 100%;
 			}
 
