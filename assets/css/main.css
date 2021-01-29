@@ -347,21 +347,15 @@ body {
 				color: #4eb980;
 			}
 
-		#header strong, #header b {
+
+
+		#header h1 {
 			color: #ffffff;
 		}
 
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
-		}
-
-		#header .button {
-			background: #ffffff;
-			color: #544d55;
-		}
 
 		#header .logo {
-			background: #4eb980;
+			background: #c78521;
 			border-radius: 100%;
 			color: #ffffff;
 			cursor: default;
@@ -374,12 +368,12 @@ body {
 			width: 2.35em;
 		}
 		#header h1 {
-			font-size: 2.5em;
+			font-size: 2.4em;
 			margin: 0;
 		}
 
 		#header p {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			line-height: 1.5em;
 			margin: 0.25em 0 0 0;
 		}
@@ -388,7 +382,7 @@ body {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		background-color: #c78521;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
