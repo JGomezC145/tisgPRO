@@ -757,3 +757,16 @@ body {
 				}
 
 	}
+
+
+	/* support animations */
+.prin {
+	opacity: 0;
+	transform: translateY(50%);
+	transition: 0.4s;
+}
+.prin1 {
+	opacity: 0;
+	transform: translateY(50%);
+	transition: 0.4s;
+}
