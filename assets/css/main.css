@@ -29,6 +29,10 @@ body {
 	line-height: 1;
 }
 
+img{
+	pointer-events: none;
+}
+
 ul {
 	list-style: none;
 }
