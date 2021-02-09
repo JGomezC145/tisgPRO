@@ -10,8 +10,9 @@
 		<meta property="og:title" content="Constructora Gómez Chavarría"/>
 		<meta property="og:description" content="Somos una constructora con años de experiencia en soldadura, pinturas, construcciones, remodelaciones, acabados y más."/>
 		<meta property="og:image" content="https://jgomezc145.github.io/tisgPRO/images/loga.png"/>
+		<link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
 	</head>
-	<body class="is-preload">
+	<body id="bodye" class="is-preload">
 		<div id="avisar" class="textcenter"><h5>ESTA ES UNA PREVIEW DEL PROYECTO Y NO ES EL TRABAJO FINAL</h5></div>
 		<!-- Header -->
 			<div id="header">
@@ -25,54 +26,55 @@
 		<!-- Main -->
 			<div id="main">
 				<header class="major container medium">
-					<h2>Lorem ipsum dolor sit amet, adipisicing
+					<h2>Nuestro mayor objetivo es la 
 					<br/>
-					Ipsum eius nulla rem  Eius nam 
+					satisfacción de nuestro cliente, la  
 					<br/>
-					us debitis non soluta id.</h2>
+					calidad es siempre lo primero</h2>
 				</header>
 
 				<div class="box alt container">
 					<section class="feature right">
 						<img class="image" src="images/pic01.jpg" alt=""/>
 						<div class="content">
-							<h3>The First Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<h3>Cocinas hechas desde cero</h3>
+							<p>Distintas formas de hacer una cocina de leña o gas. Con parrilla o simplemente para cocinar una deliciosa sopa a la leña con todo lo que necesite.</p>
 						</div>
 					</section>
 					<section class="feature left">
 						<img class="image" src="images/pic02.jpg" alt="" />
 						<div class="content">
-							<h3>The Second Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<h3>Instalación de vallas y verjas</h3>
+							<p>Remodele la parte frontal de su casa instalando verjas o un nuevo portón que luzca la belleza de su hogar.</p>
 						</div>
 					</section>
 					<section class="feature right">
 						<img class="image" src="images/pic03.jpg" alt=""/>
 						<div class="content">
-							<h3>The Third Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<h3>Construcción de casas prefabricadas</h3>
+							<p>¡Casa nueva, vida nueva! <br style="@media screen and (max-width: 736px) { display: none; }"> Le construimos una casa prefabricada para que comience una nueva y mejor vida.</p>
 						</div>
 					</section>
 				</div>
 
 				
-				<footer class="textcenter container medium">
-					<h3>Contacta y cotiza<span class="textred"> ahora</span></h3>
+				<footer id="" class="textcenter container medium">
+					<h2>Contacte<span class="textred"> ahora</span></h2>
 					<p>Escríbanos sin ningun compromiso y cotize un nuevo proyecto.</p>
 					<ul class="actions special">
 						<li><a href="https://wa.me/50685924113?text=Me%20gustaria%20consultar%20sobre%20uno%20de%20tus%20productos" class="button">Enviar mensaje por WhatsApp</a></li>
 					</ul>
 				</footer>
 			</div>
-			<link rel="stylesheet" href="assets/css/animations.css">
-		<!-- Footer -->
+			<!-- <link rel="stylesheet" href="assets/css/animations.css"> -->		
+			
+			<!-- Footer -->
 			<div id="footer">
 				<div class="container medium">
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<p style="font-style: italic;">“Pero los que esperan a Jehová tendrán nuevas fuerzas; levantarán alas como águilas; correrán y no se cansarán, caminarán y no se fatigarán.”</p>
+					<span style="display: block; text-align: right; font-style: italic;">Isaías 40:31</span>
 					<ul class="copyright">
-						<li>&copy; 2021. All rights reserved.</li>
+						<li>2021 &copy; Jeremy Gomez ~ Derechos reservados.</li>
 					</ul>
 				</div>
 			</div>
@@ -91,7 +93,8 @@
 				var user = localStorage.getItem('user');
 				if (user) {
 					if (user == 'develop_') {
-						document.getElementById('avisar').innerHTML =  `<h5>Documento en prueba. Hola <span class="textred">Jeremy</span>, el modo Developer esta activado.</h5>`;
+/* 						document.getElementById('avisar').innerHTML =  `<h5>Documento en prueba. Hola <span class="textred">Jeremy</span>, el modo Developer esta activado.</h5>`; */						
+						document.getElementById('avisar').style = 'display: none;'
 						console.log('Iniciando modo Developer')
 					}
 				} else {
@@ -100,6 +103,7 @@
 				window.onload = function() {
 				var prin = document.getElementById('prin'); 
 				var prin1 = document.getElementById('prin1');
+				document.getElementById('bodye').classList = '';
 				prin.style.transform = 'translateY(0)';
 				prin.style.opacity = '1';
 				prin1.style.transform = 'translateY(0)';

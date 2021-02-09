@@ -16,6 +16,12 @@
     color: #fff;
 }
 
+/* ocultar */
+.is-preload {
+	display: none;
+	background: royalblue;
+}
+
 span.textred::selection {
 	background: rgb(120, 212, 128);
 	color: rgb(224, 43, 43)
@@ -179,7 +185,7 @@ body {
 	.button {
 		appearance: none;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		background: #544d55;
+		background: #178a6d;
 		border-radius: 4px;
 		border: 0;
 		margin-top: 30px;
@@ -197,11 +203,11 @@ body {
 		text-transform: uppercase;
 	}
 		.button:hover {
-			background: #6e6570;
+			background:#105846;
 		}
 
 		.button:active {
-			background: #474148;
+			background:  #2d4044;
 		}
 
 /* Box */
@@ -370,12 +376,12 @@ body {
 			cursor: default;
 			display: inline-block;
 			font-size: 2.25em;
-			height: 2.35em;
+			height: 4em;
 			overflow: visible;
 			line-height: 2.35em;
 			margin: 0 0 0.75em 0;
 			text-align: center;
-			width: 2.35em;
+			width: 4em;
 		}
 		#header h1 {
 			font-size: 2.4em;
@@ -392,7 +398,7 @@ body {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #ff0114;
+		background-color: #1a49c9;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
@@ -555,7 +561,7 @@ body {
 
 	}
 
-
+/* END NORMAL */
 
 /* Celular (Default) */
 
@@ -687,6 +693,8 @@ body {
 
 	}
 
+/* END Celular (Default) */
+
 /* Celular (Portrait) */
 
 	@media screen and (max-width: 480px) {
@@ -761,6 +769,8 @@ body {
 				}
 
 	}
+
+	/* END Celular (Portrait) */
 
 
 	/* support animations */
