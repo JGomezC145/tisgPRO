@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos a Disponibilidad</title>
+    <meta property="og:title" content="Productos Constructora Gómez Chavarría"/>
+    <meta property="og:description" content="Somos una constructora con años de experiencia en soldadura, pinturas, construcciones, remodelaciones, acabados y más."/>
+    <meta property="og:image" content="https://jgomezc145.github.io/tisgPRO/images/loga.png"/>
+    <link rel="shortcut icon" href="https://jgomezc145.github.io/tisgPRO/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/productos.css">
+</head>
+<body id="bodye" class="is-preload">
+    <div id="avisar" class="textcenter textred"><h5>ESTA ES UNA PREVIEW DEL PROYECTO Y NO ES EL TRABAJO FINAL</h5></div>
+        <!-- Header -->
+    <div id="header">
+        <img class="logo" src="images/loga.png" alt="logo-image">
+        <h1 id="prin" class="prin">Gómez Chavarría</h1>
+        <p id="prin1" class="prin1">Contratista, instalación de vallas o verjas, 
+        <br>
+        remodelaciones, tapias 	y más.</p>
+    </div>
+
+
+
+    <div id="main">
+        <header class="major container medium">
+            <h2>Conozca algunos de 
+            <br>
+            nuestros productos</h2>
+        </header>
+    </div>
+
+    <div id="posts-collection" class="containers box alt container"></div>
+
+
+        <!-- Footer -->
+    <div id="footer">
+        <div class="container medium">
+            <p style="font-style: italic;">“Pero los que esperan a Jehová tendrán nuevas fuerzas; levantarán alas como águilas; correrán y no se cansarán, caminarán y no se fatigarán.”</p>
+            <span style="display: block; text-align: right; font-style: italic;">Isaías 40:31</span>
+            <ul class="copyright">
+                <li>2021 &copy; Jeremy Gomez ~ Derechos reservados.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        //read user
+        var user = localStorage.getItem('user');
+        if (user) {
+            if (user == 'develop_') {
+             /* document.getElementById('avisar').innerHTML =  `<h5>Documento en prueba. Hola <span class="textred">Jeremy</span>, el modo Developer esta activado.</h5>`; */						
+                document.getElementById('avisar').style = 'display: none;'
+                console.log('Iniciando modo Developer')
+            }
+        } else {
+            console.log('No se ha detectado ningun tipo de usuario.')
+        }
+        //Using onload
+        window.onload = function() {
+        var prin = document.getElementById('prin'); 
+        var prin1 = document.getElementById('prin1');
+        document.getElementById('bodye').classList = '';
+        prin.style.transform = 'translateY(0)';
+        prin.style.opacity = '1';
+        prin1.style.transform = 'translateY(0)';
+        prin1.style.opacity = '1';
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>    
+    <script src="app.js"></script>
+</body>
+</html>
