@@ -20,7 +20,7 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 var storageRef = storage.ref();
 
-//Create Post
+//Create ProductPost
 function createPost(title, time, content, imgsource, id, likes) {
 
   let div = document.createElement("div");
