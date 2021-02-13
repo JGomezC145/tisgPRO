@@ -21,7 +21,7 @@ const storage = firebase.storage();
 var storageRef = storage.ref();
 
 //Create ProductPost
-function createPost(title, time, content, imgsource, id, likes) {
+function createPost(title, time, descr, imgsource, id, precio) {
 
   let div = document.createElement("div");
   div.setAttribute("class", "card");
@@ -30,8 +30,8 @@ function createPost(title, time, content, imgsource, id, likes) {
   card.setAttribute("class", "card");
   let cardbody = document.createElement("div");
   let idcontainer = document.createElement("p");
-  idcontainer.setAttribute("style", "display: none")/* 
-  card.setAttribute("class", "card") */
+  idcontainer.setAttribute("style", "display: none")
+  /* card.setAttribute("class", "card") */
   cardbody.setAttribute("class", "face2")
   yikes.setAttribute("style", "display: flex; justify-content: right;");
 
@@ -50,9 +50,9 @@ function createPost(title, time, content, imgsource, id, likes) {
 
   img.src = imgsource;
   h2.textContent = title;
-  p.textContent = content;
+  p.textContent = descr;
   idcontainer.textContent = id;
-  likescounter.textContent = "₡ " + likes;
+  likescounter.textContent = precio;
 
 
   yikes.appendChild(heart);
@@ -67,30 +67,28 @@ function createPost(title, time, content, imgsource, id, likes) {
 
   //div.appendChild(card);
 
-
   // div.appendChild(img);
   // div.appendChild(h2);
   // div.appendChild(small);
   // div.appendChild(p);
   // div.appendChild(yikes);
 
-
   postCollection.appendChild(card);
 }
 
 // Get Posts
 function getPosts() {
-  db.collection("posts")
+  db.collection("productos")
     .get()
     .then(snapshot => {
       snapshot.docs.forEach(docs => {
         createPost(
-          docs.data().postName,
+          docs.data().productName,
           docs.data().createdAt,
-          docs.data().postContent,
+          docs.data().productDesc,
           docs.data().imgSource,
           docs.id,
-          docs.data().likes
+          docs.data().precio
         );
       });
     })

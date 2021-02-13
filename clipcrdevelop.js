@@ -1,9 +1,6 @@
 /* Linea de bases unificadas */
-var tisgPRO = function(a=1) {
-    var time=a;
-    console.log(`Que pasa? ${time} y tambien ${a}`)
-
-
+var tisgPRO = function() {
+    
     return {
       sistemlk: function(codebreak) {
         if (codebreak == '29154') {

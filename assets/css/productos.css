@@ -14,9 +14,13 @@
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
     margin: 50px 0 50px 0;
+    border: solid #816e6a 2px;
 }
 .card img {
     width: 300px;
+}
+.card h1 {
+    letter-spacing: 1.41px
 }
 .face2 {
     width: 300px;
