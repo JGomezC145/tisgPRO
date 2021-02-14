@@ -78,6 +78,7 @@ function createPost(title, time, descr, imgsource, id, precio) {
 
 // Get Posts
 function getPosts() {
+  document.getElementById('posts-collection').innerHTML = '';
   db.collection("productos")
     .get()
     .then(snapshot => {
