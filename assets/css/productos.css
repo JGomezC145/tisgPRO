@@ -7,25 +7,28 @@
     margin-bottom: auto;
 }
 .card {
-    width: 300px;
+    /* width: 300px; */
     overflow: visible;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.3333333333%;
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    margin: 50px 0 50px 0;
+    /* -ms-flex: 0 0 33.3333333333%; */
+    /* flex: 0 0 33.3333333333%; */
+    width: 32%;
+    margin: 50px 1px 50px 0;
     border: solid #816e6a 2px;
+
 }
 .card img {
-    width: 300px;
+    width: 100%;
 }
 .card h1 {
     letter-spacing: 1.41px
 }
 .face2 {
-    width: 300px;
+    width: 100%;
     text-align: justify;
     color: #000;
+    /* margin-left: auto;
+    margin-right: auto; */
     display: block;
 }
 @media screen and (max-width: 736px) {
@@ -36,8 +39,9 @@
     .card {
         width: 100% !important;
         display: block;
-        overflow: visible !important;
+        overflow: scroll !important;
         max-width: 100%;
+        border: none;
     }
     .card img {
         display: block;

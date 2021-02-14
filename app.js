@@ -8,8 +8,8 @@ var firebaseConfig = {
   storageBucket: "gomezchava-5b.appspot.com",
   messagingSenderId: "593431228560",
   appId: "1:593431228560:web:be55ab60866a0f8045a815"
-
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -33,7 +33,7 @@ function createPost(title, time, descr, imgsource, id, precio) {
   idcontainer.setAttribute("style", "display: none")
   /* card.setAttribute("class", "card") */
   cardbody.setAttribute("class", "face2")
-  yikes.setAttribute("style", "display: flex; justify-content: right;");
+  yikes.setAttribute("style", "display: flex; justify-content: right; color: rgb(39, 98, 224);");
 
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
