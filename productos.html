@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="assets/css/productos.css">
 </head>
 <body id="bodye" class="is-preload">
-    <div id="avisar" class="textcenter textred"><h5>ESTA ES UNA PREVIEW DEL PROYECTO Y NO ES EL TRABAJO FINAL</h5></div>
-        <!-- Header -->
+    <!-- Header -->
     <div id="header">
-        <img class="logo" src="images/loga.png" alt="logo-image">
+        <img class="logo" src="images/loga.jpg" alt="logo-image">
         <h1 id="prin" class="prin">Gómez Chavarría</h1>
         <p id="prin1" class="prin1">Contratista, instalación de vallas o verjas, 
         <br>
         remodelaciones, tapias 	y más.</p>
+        <a href="index.html" style="background-color: rgb(192, 63, 63);" class="buttona">Página principal</a>
     </div>
 
 
@@ -35,7 +35,16 @@
 
     <div id="posts-collection" class="containers box alt containerpro"></div>
 
-
+<!--     <div class="card">
+        <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/gomezchava-5b.appspot.com/o/images%2F5.jpeg?alt=media&amp;token=eda60588-959b-43b4-ab0f-94997a99bd27">
+        <div class="face2">
+            <h2 class="card-title">Casas prefabricadas</h2>
+            <p class="card-text">Realice el sueño de obtener su casa nueva. Cotice y trabaje con nosotros.</p>
+            <div style="display: flex; justify-content: right; color: rgb(39, 98, 224);">
+                <p>A consultar</p>
+            </div>
+        </div>
+    </div> -->
         <!-- Footer -->
     <div id="footer">
         <div class="container medium">
@@ -48,18 +57,7 @@
     </div>
 
     <script>
-        //read user
-        var user = localStorage.getItem('user');
-        if (user) {
-            if (user == 'develop_') {
-             /* document.getElementById('avisar').innerHTML =  `<h5>Documento en prueba. Hola <span class="textred">Jeremy</span>, el modo Developer esta activado.</h5>`; */						
-                document.getElementById('avisar').style = 'display: none;'
-                console.log('Iniciando modo Developer')
-            } 
-        } else {
-            console.log('No se ha detectado ningun tipo de usuario.')
-        }
-        //Using onload
+        //Uso onload
         window.onload = function() {
         var prin = document.getElementById('prin'); 
         var prin1 = document.getElementById('prin1');
@@ -71,11 +69,14 @@
         }
     </script>
 
-    
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    
+    <!-- Controlador General -->    
     <script src="app.js"></script>
 </body>
 </html>
+<!-- helpmeplease -->

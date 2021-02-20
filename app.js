@@ -20,8 +20,14 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 var storageRef = storage.ref();
 
+
 //Create ProductPost
 function createPost(title, time, descr, imgsource, id, precio) {
+  var base = "https://wa.me/50685924113?text=";
+  var texto = "Me podría dar más información sobre el producto " + title.toLowerCase() + ".";
+  var general = base + texto.replace(/ /g, '%20')
+  console.log(general);
+
 
   let div = document.createElement("div");
   div.setAttribute("class", "card");
@@ -33,13 +39,13 @@ function createPost(title, time, descr, imgsource, id, precio) {
   idcontainer.setAttribute("style", "display: none")
   /* card.setAttribute("class", "card") */
   cardbody.setAttribute("class", "face2")
-  yikes.setAttribute("style", "display: flex; justify-content: right; color: rgb(39, 98, 224);");
+  yikes.setAttribute("style", "width: 100%; color: rgb(39, 98, 224);");
 
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
   let img = document.createElement("img");
   img.setAttribute("class", "face1")
-  let likescounter = document.createElement("p");
+  let likescounter = document.createElement("a");
   let heart = document.createElement("i")
   heart.setAttribute("class", "bx bxs-heart")
   heart.setAttribute("style", "margin-top: 5px; margin-right: 3px;")
@@ -53,7 +59,7 @@ function createPost(title, time, descr, imgsource, id, precio) {
   p.textContent = descr;
   idcontainer.textContent = id;
   likescounter.textContent = precio;
-
+  likescounter.setAttribute("href", general)
 
   yikes.appendChild(heart);
   yikes.appendChild(likescounter);
