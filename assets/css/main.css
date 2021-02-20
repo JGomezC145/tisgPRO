@@ -191,14 +191,16 @@ body {
     .textcenter {
 		text-align: center;
 	}
+	
+
 	.button {
 		appearance: none;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		background: #178a6d;
+		background: #5A7AD2;
 		border-radius: 4px;
 		border: 0;
 		margin-top: 30px;
-		color: #ffffff;
+		color: #000;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.9em;
@@ -212,14 +214,15 @@ body {
 		text-transform: uppercase;
 	}
 		.button:hover {
-			background:#105846;
+			background:#143696;
+			color: #fff;
 		}
 
 		.button:active {
-			background:  #2d4044;
+			background:  #09173f;
 		}
 
-/* Clase Box */
+/* Box */
 
 	.box {
 		background: #ffffff;
@@ -228,13 +231,13 @@ body {
 		padding: 3.5em;
 	}
 
-		.box.alt {
+		.box.alterno {
 			background: none;
 			border: none;
 			padding: 0;
 		}
 
-/* D */
+/* Feature */
 
 	.feature {
 		position: relative;
@@ -361,17 +364,6 @@ body {
 			height: 50px;
 		}
 
-		#header a {
-			border-bottom-color: rgba(255, 255, 255, 0.35);
-			color: rgba(255, 255, 255, 0.8);
-		}
-
-			#header a:hover {
-				border-bottom-color: transparent;
-				color: #4eb980;
-			}
-
-
 
 		#header h1 {
 			color: #ffffff;
@@ -388,7 +380,7 @@ body {
 			height: 4em;
 			overflow: visible;
 			line-height: 2.35em;
-			margin: 0 0 0.75em 0;
+			margin: 0 0 0.55em 0;
 			text-align: center;
 			width: 4em;
 		}
@@ -438,6 +430,42 @@ body {
 					border: 0;
 				}
 
+/* s */
+.buttona {
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	background: #2A4796;
+	border-radius: 4px;
+	border: 0;
+	margin-top: 30px;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.9em;
+	font-weight: 700;
+	letter-spacing: 0.125em;
+	line-height: 2.75em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	animation-name: buttonna;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	}
+
+	.buttona:hover {
+		background:#032a64;
+		color: #fff;
+}
+
+@keyframes buttonna {
+	0%   {transform: translateY(5px);}
+	25%  {transform: translateY(-5px);}
+	50%  {transform: translateY(-5px);}
+	100% {transform: translateY(5px);}
+}
+
 
 /* Main */
 
@@ -458,8 +486,8 @@ body {
 			z-index: -1;
 		}
 
-		#main header.major,
-		#main footer.major {
+		#main header.master,
+		#main footer.master {
 			background: #ffffff;
 		}
 
@@ -481,14 +509,14 @@ body {
 				font-size: 1.25em;
 			}
 
-			header.major p {
+			header.master p {
 				font-size: 1.25em;
 			}
 
 		/* Header */
 
 			#header {
-				padding: 8em 0 16em 0;
+				padding: 4em 0 9em 0;
 			}
 
 				#header h1 {
@@ -592,23 +620,23 @@ body {
 				font-size: 0.8em;
 			}
 
-			header.major {
+			header.master {
 				margin-bottom: 2em;
 			}
 
-				header.major br {
+				header.master br {
 					display: none;
 				}
 
-				header.major p {
+				header.master p {
 					font-size: 0.8em;
 				}
 
-			footer.major {
+			footer.master {
 				margin-top: 2em;
 			}
 
-				footer.major br {
+				footer.master br {
 					display: none;
 				}
 
@@ -710,12 +738,12 @@ body {
 
 		/* Section/Article */
 
-			header.major {
+			header.master {
 				padding-left: 1em;
 				padding-right: 1em;
 			}
 
-			footer.major {
+			footer.master {
 				padding-left: 1em;
 				padding-right: 1em;
 			}
