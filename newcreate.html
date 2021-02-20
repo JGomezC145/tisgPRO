@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLOADER.XS by JeremyGomez</title>
+</head>
+<body>
+    <style>
+        form {
+            width: 100%;
+        }
+        form input {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .settings {
+            width: 100%;
+            text-align: center;
+        }
+        .settings input {
+            width: 300px;
+        }
+        .enter {
+            justify-content: space-between;
+        }
+    </style>
+    <h2 style="text-align: center;">UPLOADER.XS <br><small>by JeremyGomez</small></h2>
+    <form style="text-align: center;">
+        <input id="name" placeholder="Name" type="text">
+        <br>
+        <textarea id="description" placeholder="Description" cols="30" rows="10"></textarea>
+        <br>
+        <input id="price" placeholder="Price" type="text">
+        <br>
+        <input onchange="cambio()" id="imgs" placeholder="Image Source" type="text">
+        <br>
+        <img src="2" width="300px" id="showimg" height="300px" alt="">
+        <br>
+        <button onclick="cargar()">Cargar docs</button>
+    </form>
+    <div class="settings" id="settings">
+        <h3>Firebase Config</h3>
+        <div class="enter">
+            <label for="apiKey">apiKey: </label>
+            <input disabled value="AIzaSyB8BGlwxVrF-sS3cAKvCqupMbbsVJ2vjw8" id="apiKey" placeholder="apiKey" type="text">
+            <br><br>
+            <label for="authDomain">authDomain: </label>
+            <input disabled value="gomezchava-5b.firebaseapp.com" id="authDomain" placeholder="authDomain" type="text">
+            <br><br>
+            <label for="databaseURL">databaseURL: </label>
+            <input disabled value="https://gomezchava-5b-default-rtdb.firebaseio.com/" id="databaseURL" placeholder="databaseURL" type="text">
+            <br><br>
+            <label for="projectId">projectId: </label>
+            <input disabled value="gomezchava-5b" id="projectId" placeholder="projectId" type="text">
+            <br><br>
+            <label for="storageBucket">storageBucket: </label>
+            <input disabled value="gomezchava-5b.appspot.com" id="storageBucket" placeholder="storageBucket" type="text">
+            <br><br>
+            <label for="messagingSenderId">messagingSenderId: </label>
+            <input disabled value="593431228560" id="messagingSenderId" placeholder="messagingSenderId" type="text">
+            <br><br>
+            <label for="appId">appId: </label>
+            <input disabled value="1:593431228560:web:be55ab60866a0f8045a815" id="appId" placeholder="appId" type="text">
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <script src="all.js"></script>
+</body>
+</html>
