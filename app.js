@@ -105,3 +105,6 @@ function getPosts() {
 }
 
 getPosts();
+db.collection("productos").doc('cQ42Ity0oCQ1SlEdDjVP').onSnapshot((doc) => {
+  console.log("Current data: ", doc.data());
+});
